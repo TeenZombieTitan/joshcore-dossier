@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breach Point — BLACKBOX</title>
+
+<meta property="og:site_name" content="BLACKBOX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Breach Point — 1v1 shooter">
+<meta property="og:description" content="Two hits and you're gone. Top-down 1v1, browser to browser, no account needed.">
+
+<meta name="theme-color" content="#0a0b0d">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/static/dossier.css">
+</head>
+
+<body data-subjects=""
+      data-events=""
+      data-root=""
+      data-server="">
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="/" class="wordmark" aria-label="Blackbox — Moderation &amp; Community Intelligence">
+      <span class="mark">BLACK<span>BOX</span></span>
+      <span class="sub">Moderation System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU</button>
+
+    <nav id="nav">
+      <a href="/people" >Everyone</a>
+      <a href="/board" >Standings</a>
+      <a href="/titles" >Titles</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/archive" >Archive</a>
+      <a href="/duel" >Duel</a>
+      <a href="/arena" class="on">Arena</a>
+    </nav>
+
+    <div class="console">
+      
+      
+      <span class="console-live" title="Blackbox is online and recording"><i></i>ONLINE</span>
+    </div>
+
+    
+    <div class="servers" id="servers"></div>
+
+    <div class="session" id="session">
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  
+
+<section>
+  <div class="centre">
+    <div>
+      <p class="eyebrow">Combat interface</p>
+      <h1>Breach Point</h1>
+      <p class="lede">
+        Top-down 1v1. First to five rounds. Deliberately lethal — you die fast,
+        so where you stand matters more than how quickly you click.
+      </p>
+    </div>
+    <div class="status-block">
+      <div class="head"><i></i>Interface Ready</div>
+      <div>MODE <b>1V1 DEATHMATCH</b></div>
+      <div>LINK <b>PEER TO PEER</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="lobby">
+  <div class="grid two">
+    <div class="card live">
+      <h2>Start a match</h2>
+      <label class="field">
+        <span>Your name</span>
+        <input id="nameInput" type="text" maxlength="20" placeholder="Raider" autocomplete="off">
+      </label>
+      <button id="hostBtn" class="btn primary">Open a room</button>
+      <p class="tiny faint" style="margin-top:12px">
+        You host, so your machine runs the match. Post the code in Discord.
+      </p>
+    </div>
+
+    <div class="card live">
+      <h2>Join a match</h2>
+      <label class="field">
+        <span>Room code</span>
+        <input id="joinInput" type="text" maxlength="5" placeholder="ABCDE"
+               autocomplete="off" spellcheck="false" style="text-transform:uppercase">
+      </label>
+      <button id="joinBtn" class="btn">Join</button>
+      <p class="tiny faint" style="margin-top:12px">
+        Straight to their browser. Nothing passes through a server.
+      </p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h2>Controls</h2>
+    <div class="grid three">
+      <div><span class="key">W A S D</span> <span class="tiny dim">move</span></div>
+      <div><span class="key">MOUSE</span> <span class="tiny dim">aim</span></div>
+      <div><span class="key">CLICK</span> <span class="tiny dim">fire</span></div>
+    </div>
+    <p class="tiny faint" style="margin:14px 0 0">
+      A <strong>breach point</strong> opens partway through each round. Hold it
+      alone for four seconds and you take the round without firing — so hiding
+      isn't a plan.
+    </p>
+  </div>
+</section>
+
+<section id="stage" hidden>
+  <div class="card" style="padding:16px">
+    <div class="hud">
+      <div class="players">
+        <span class="player"><span id="youDot" class="chip"></span>
+          <span id="youName">You</span> <strong id="youScore" class="score">0</strong></span>
+        <span class="versus">vs</span>
+        <span class="player"><strong id="themScore" class="score">0</strong>
+          <span id="themName">Opponent</span> <span id="themDot" class="chip"></span></span>
+      </div>
+      <div class="room">
+        ROOM <strong id="roomCode">—</strong>
+        <button id="copyBtn" class="btn tiny-btn">Copy</button>
+      </div>
+    </div>
+
+    <p id="status" class="status">Waiting…</p>
+
+    
+    <div class="stage-wrap">
+      <canvas id="canvas" class="arena" tabindex="0"></canvas>
+    </div>
+
+    <div class="controls">
+      <button id="rematch" class="btn primary" hidden>New match</button>
+    </div>
+  </div>
+
+  <p class="tiny faint" style="margin-top:14px">
+    The host's machine runs the simulation — without one side deciding, you'd
+    disagree about who shot first and there'd be no fair way to settle it.
+  </p>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="wrap between">
+    <span>Compiled by Blackbox. Nothing here was volunteered.</span>
+    <span class="foot-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      
+        <span class="faint">Last compiled 19 Sep 2026, 20:33</span>
+      
+    </span>
+  </div>
+</footer>
+
+<script src="/static/system.js"></script>
+
+
+<script src="/static/servers.js"></script>
+
+
+<script>window.JOSHCORE_CLIENT_ID = "1495488424747208746";</script>
+<script src="/static/signin.js"></script>
+
+
+<script src="/static/vendor/peerjs.min.js"></script>
+<script src="/static/arena.js"></script>
+<script src="/static/games.js"></script>
+
+</body>
+</html>
