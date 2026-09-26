@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Standings — BLACKBOX</title>
+
+<meta property="og:site_name" content="BLACKBOX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BLACKBOX">
+<meta property="og:description" content="Everything Blackbox has recorded.">
+
+<meta name="theme-color" content="#0a0b0d">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/static/dossier.css">
+</head>
+
+<body data-subjects="28"
+      data-events="104"
+      data-root="/s/9fdb477a968905f6"
+      data-server="The Raiders of The Lost Braincell">
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="/s/9fdb477a968905f6/" class="wordmark" aria-label="Blackbox — Moderation &amp; Community Intelligence">
+      <span class="mark">BLACK<span>BOX</span></span>
+      <span class="sub">Moderation System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU</button>
+
+    <nav id="nav">
+      <a href="/s/9fdb477a968905f6/people" >Everyone</a>
+      <a href="/s/9fdb477a968905f6/board" class="on">Standings</a>
+      <a href="/s/9fdb477a968905f6/titles" >Titles</a>
+      <a href="/s/9fdb477a968905f6/gallery" >Gallery</a>
+      <a href="/s/9fdb477a968905f6/archive" >Archive</a>
+      <a href="/duel" >Duel</a>
+      <a href="/arena" >Arena</a>
+    </nav>
+
+    <div class="console">
+      
+        <span class="console-stat"><b>28</b><span>SUBJECTS</span></span>
+        <span class="console-stat"><b>104</b><span>EVENTS</span></span>
+      
+      
+      <span class="console-live" title="Blackbox is online and recording"><i></i>ONLINE</span>
+    </div>
+
+    
+    <div class="servers" id="servers"></div>
+
+    <div class="session" id="session">
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  
+
+<section>
+  <p class="eyebrow">Standings</p>
+  <h1>Ranked by everything counted.</h1>
+  <p class="lede">
+    Experience accumulates from being here and saying things. There is no way to
+    shortcut it.
+  </p>
+</section>
+
+<section>
+  <div class="card" style="padding:14px 16px">
+    <div class="filters">
+      <span class="filter-label">Rank by</span>
+      <div class="filter-group" data-facet="sort" id="sortGroup">
+        <button class="chip-btn on" data-value="xp">XP</button>
+        <button class="chip-btn" data-value="level">Level</button>
+        <button class="chip-btn" data-value="rep">Rep</button>
+        <button class="chip-btn" data-value="crowns">Crowns</button>
+        <button class="chip-btn" data-value="activity">Activity</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="scroll-x">
+    <div class="board" id="board">
+      <div class="board-head">
+        <span>#</span>
+        <span>Player</span>
+        <span class="num">LV</span>
+        <span class="num">XP</span>
+        <span class="num">Rep</span>
+        <span class="num">Titles</span>
+      </div>
+
+      
+        <div class="board-row row"
+             data-xp="2850"
+             data-level="6"
+             data-rep="3"
+             data-crowns="0"
+             data-activity="49"
+             style="--i: 0">
+          <span class="pos">1</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/381063982448115713/75b55f47b06a795cc7b4ac32b701b7a8.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/yes-i-was-banned">Was i ever banned</a>
+            
+          </span>
+          <span class="num">6</span>
+          <span class="num">2,850</span>
+          <span class="num">3</span>
+          <span class="num">4</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="1710"
+             data-level="5"
+             data-rep="4"
+             data-crowns="0"
+             data-activity="33"
+             style="--i: 1">
+          <span class="pos">2</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/642925839675031562/25bb000943a78170a1f7a11f72cf652e.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/water">Splosh</a>
+            
+          </span>
+          <span class="num">5</span>
+          <span class="num">1,710</span>
+          <span class="num">4</span>
+          <span class="num">3</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="1470"
+             data-level="4"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="22"
+             style="--i: 2">
+          <span class="pos">3</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/778003967111725066/1e817b837dc79a35d7f18b2b35b737b2.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/txctical-miku-subway-mik">Txctical Miku (Subway Miku)</a>
+            
+          </span>
+          <span class="num">4</span>
+          <span class="num">1,470</span>
+          <span class="num">0</span>
+          <span class="num">1</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="1100"
+             data-level="4"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 3">
+          <span class="pos">4</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/707772726663708763/062e072c1b32ed167857204845d73e03.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/former-arc-raider-stock">Former Arc Raider Stock Trader</a>
+            
+          </span>
+          <span class="num">4</span>
+          <span class="num">1,100</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="580"
+             data-level="3"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="77"
+             style="--i: 4">
+          <span class="pos">5</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/206469720050892800/3b95285307d532b125ca7a8788eb283d.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/josh-number-0">kinky (Black josh)</a>
+            
+          </span>
+          <span class="num">3</span>
+          <span class="num">580</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="540"
+             data-level="3"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="54"
+             style="--i: 5">
+          <span class="pos">6</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/561586133910290432/f10d2ebd4b5393908a1b6641706f9d08.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/shaqqypoo-jiggalow-men">Shaqqypoo (Victim)</a>
+            
+          </span>
+          <span class="num">3</span>
+          <span class="num">540</span>
+          <span class="num">0</span>
+          <span class="num">2</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="510"
+             data-level="3"
+             data-rep="0"
+             data-crowns="2"
+             data-activity="20"
+             style="--i: 6">
+          <span class="pos">7</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/328198660791730197/2bb72998e994245023fda5b78342383c.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/only-arc-s-5-99-subscrip">Only Arc’s £5.99 subscription</a>
+            
+          </span>
+          <span class="num">3</span>
+          <span class="num">510</span>
+          <span class="num">0</span>
+          <span class="num">2</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="340"
+             data-level="2"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 7">
+          <span class="pos">8</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/632981624606294086/e0b1b9ac03c45ebe7ea3589600813422.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/my-dick-is-in-jail">My dick is in jail</a>
+            
+          </span>
+          <span class="num">2</span>
+          <span class="num">340</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="330"
+             data-level="2"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 8">
+          <span class="pos">9</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/1064004899836272760/115612d255f3d5be10975549244eaf1f.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/u1064004899836272760">᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼</a>
+            
+          </span>
+          <span class="num">2</span>
+          <span class="num">330</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="230"
+             data-level="2"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="24"
+             style="--i: 9">
+          <span class="pos">10</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/935875641545461850/f1b7c5bbcfa158b80eac5f6d131c7295.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/j3fr">anti cheater</a>
+            
+          </span>
+          <span class="num">2</span>
+          <span class="num">230</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="220"
+             data-level="2"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 10">
+          <span class="pos">11</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/embed/avatars/1.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/full-kit-andy">Full Kit Andy</a>
+            
+          </span>
+          <span class="num">2</span>
+          <span class="num">220</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="160"
+             data-level="2"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="21"
+             style="--i: 11">
+          <span class="pos">12</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/714551443993919598/57c02a4f6a4473ba75d99ef117b61c7b.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/offtheaddy">offtheaddy.</a>
+            
+          </span>
+          <span class="num">2</span>
+          <span class="num">160</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="100"
+             data-level="2"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="12"
+             style="--i: 12">
+          <span class="pos">13</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/457613118881923082/1e70a5fc8e4d7d40d63af6e5c614e96b.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/hunterknight">HunterKnight</a>
+            
+          </span>
+          <span class="num">2</span>
+          <span class="num">100</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="40"
+             data-level="1"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 13">
+          <span class="pos">14</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/609155519650856961/385f2fc2ce1f9a9f2d27b35d5cc416ec.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/kallum-unbanned-cheater">Kallum (Unbanned Cheater)</a>
+            
+          </span>
+          <span class="num">1</span>
+          <span class="num">40</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="30"
+             data-level="1"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="3"
+             style="--i: 14">
+          <span class="pos">15</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/1147634201701662740/1033365bb857040f4a828d8a734f06ae.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/iism0kehash">iiSM0KEHASH</a>
+            
+          </span>
+          <span class="num">1</span>
+          <span class="num">30</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="20"
+             data-level="1"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 15">
+          <span class="pos">16</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/avatars/310819983380971520/8ccb95f32597d3510806a91c1aa008d5.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/hairpin-main">Hairpin main</a>
+            
+          </span>
+          <span class="num">1</span>
+          <span class="num">20</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+        <div class="board-row row"
+             data-xp="10"
+             data-level="1"
+             data-rep="0"
+             data-crowns="0"
+             data-activity="0"
+             style="--i: 16">
+          <span class="pos">17</span>
+          <span class="who-cell name">
+            <img class="face" src="https://cdn.discordapp.com/embed/avatars/1.png?size=256" alt="">
+            
+              <a href="/s/9fdb477a968905f6/u/test1">TEST1</a>
+            
+          </span>
+          <span class="num">1</span>
+          <span class="num">10</span>
+          <span class="num">0</span>
+          <span class="num">0</span>
+        </div>
+      
+    </div>
+  </div>
+
+  <p class="tiny faint mono" style="margin-top:14px" id="sortNote">
+    RANKED BY EXPERIENCE · 17 SUBJECTS
+  </p>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="wrap between">
+    <span>Compiled by Blackbox. Nothing here was volunteered.</span>
+    <span class="foot-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      
+        <span class="faint">Last compiled 26 Sep 2026, 09:10</span>
+      
+    </span>
+  </div>
+</footer>
+
+<script src="/static/system.js"></script>
+
+
+<script src="/static/servers.js"></script>
+
+
+<script>window.JOSHCORE_CLIENT_ID = "1495488424747208746";</script>
+<script src="/static/signin.js"></script>
+
+
+<script src="/static/board.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — BLACKBOX</title>
+
+<meta property="og:site_name" content="BLACKBOX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy — what Blackbox records">
+<meta property="og:description" content="Exactly what the bot keeps, what ends up on the site, and how to take yours down.">
+
+<meta name="theme-color" content="#0a0b0d">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/static/dossier.css">
+</head>
+
+<body data-subjects=""
+      data-events=""
+      data-root=""
+      data-server="">
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="/" class="wordmark" aria-label="Blackbox — Moderation &amp; Community Intelligence">
+      <span class="mark">BLACK<span>BOX</span></span>
+      <span class="sub">Moderation System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU</button>
+
+    <nav id="nav">
+      <a href="/people" >Everyone</a>
+      <a href="/board" >Standings</a>
+      <a href="/titles" >Titles</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/archive" >Archive</a>
+      <a href="/duel" >Duel</a>
+      <a href="/arena" >Arena</a>
+    </nav>
+
+    <div class="console">
+      
+      
+      <span class="console-live" title="Blackbox is online and recording"><i></i>ONLINE</span>
+    </div>
+
+    
+    <div class="servers" id="servers"></div>
+
+    <div class="session" id="session">
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  
+
+<section>
+  <p class="eyebrow">Privacy</p>
+  <h1>What's kept, and how to take it down.</h1>
+  <p class="lede">
+    This site publishes real information about real people who never filled in a
+    form. That's the whole idea, and it's also exactly why this page exists. Here
+    is everything, in plain terms.
+  </p>
+</section>
+
+<section class="legal">
+
+  <h2>Who runs this</h2>
+  <p>
+    Blackbox is a hobby project run by one person for one Discord server. There
+    is no company behind it, nothing is sold, and there are no adverts,
+    analytics, trackers or third-party scripts on this site.
+  </p>
+
+  <h2>What the bot records</h2>
+  <p>While it's in the server, Blackbox keeps:</p>
+  <ul>
+    <li>Your Discord ID, display name, username and avatar.</li>
+    <li><strong>How many</strong> messages you send each day — including how many between 2am and 5am, which is where the "night owl" business comes from.</li>
+    <li>XP, level and reputation, and the titles and crowns you've been awarded.</li>
+    <li>Region, playstyle and platform — only if you set them yourself with <code>~setup</code>.</li>
+    <li>Groups you hosted or joined, supply drops you claimed, rumours you filed.</li>
+    <li>Screenshots you post in the gallery channel, saved as files on the machine the bot runs on.</li>
+    <li>A log of things that happened: a crown awarded, a title earned, someone bounced from the server.</li>
+  </ul>
+
+  <h2>Message content</h2>
+  <p>
+    <strong>Your ordinary messages are counted, not stored.</strong> The bot
+    increments a number and moves on — it does not keep a copy of what you said,
+    and there is no way to read your chat history back out of it.
+  </p>
+  <p>There are three exceptions, and they all involve text you deliberately put through the bot:</p>
+  <ul>
+    <li><strong>Read-aloud.</strong> If someone reacts 🔊 to a message, that message's text is stored in the event log so there's a record of what the bot was made to say out loud.</li>
+    <li><strong>Rumours.</strong> A rumour you submit is stored and published — that's the point of submitting one.</li>
+    <li><strong>Screenshot captions.</strong> Whatever you type alongside an image in the gallery channel is kept with the image.</li>
+  </ul>
+  <p class="dim">
+    Moderation reports also keep what was reported, so staff can act on them.
+  </p>
+
+  <h2>What ends up on this website</h2>
+  <p>
+    The site is rebuilt from that database every few minutes and published as
+    plain files. It shows your name, avatar, level, XP, reputation, titles,
+    crowns, the region and platform you set, a thirty-day activity chart, and
+    any screenshots you posted.
+  </p>
+  <p>
+    <strong>Your Discord account ID is never published.</strong> Sign-in matches
+    you to your page using a one-way hash of your ID, so the published files
+    never contain a list of anyone's account numbers.
+  </p>
+
+  <h2>Signing in</h2>
+  <p>
+    Signing in is optional and does nothing except highlight your own entries.
+    It uses Discord's own login with the <code>identify</code> permission — your
+    ID, name and avatar. Not your email, not your servers, not your messages.
+  </p>
+  <p>
+    The token comes back to your browser, is used once to ask Discord who you
+    are, and is then thrown away. Nothing about your sign-in is sent to a server,
+    because for the public site there isn't one — it's static files. What's left
+    is a note in your own browser's storage, which "sign out" deletes.
+  </p>
+
+  <h2>Taking yourself off</h2>
+  <p>You do not have to ask anyone's permission for any of this.</p>
+  <ul>
+    <li><code>~hideme</code> — seals your file. Your profile page stops existing, you come off the directory, and your screenshots come off the gallery. Run it again to undo it.</li>
+    <li><code>~pull</code> — reply to one of your screenshots in Discord to take that image off the site. Clicking the ❌ on your own post does the same thing.</li>
+  </ul>
+  <p class="dim">
+    One thing to be straight about: <strong>sealing your file does not remove your
+    name from the standings.</strong> You still appear in the leaderboard with your
+    name, level and XP — just with no link to a page. If you want off the
+    standings as well, ask in the server and it'll be done by hand.
+  </p>
+
+  <h2>Deleting it properly</h2>
+  <p>
+    If you want your record actually deleted rather than hidden — gone from the
+    database, not just off the site — ask in the Discord server and it will be
+    removed. Leaving the server does not delete anything on its own.
+  </p>
+
+  <h2>How long it's kept</h2>
+  <p>
+    Indefinitely, unless you ask for it to go. This is a server history project;
+    there is no automatic expiry, and that's deliberate.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Discord requires its users to be at least 13, and older in some countries.
+    This site inherits that — it isn't intended for anyone younger.
+  </p>
+
+  <h2>If this changes</h2>
+  <p>
+    The date at the bottom of every page is when the site was last rebuilt. If
+    what's collected changes meaningfully, it'll be said in the server rather
+    than quietly edited in here.
+  </p>
+
+  <p class="note">
+    Written in plain English by the person who runs this, not by a lawyer. It
+    describes honestly what the code actually does. If something here doesn't
+    match what you see, that's a bug — say so in the server and it'll be fixed.
+  </p>
+
+  <p style="margin-top:26px">
+    <a href="/terms" class="btn">Read the terms</a>
+    <a href="/" class="btn">Back to the index</a>
+  </p>
+
+</section>
+
+
+</main>
+
+<footer>
+  <div class="wrap between">
+    <span>Compiled by Blackbox. Nothing here was volunteered.</span>
+    <span class="foot-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      
+        <span class="faint">Last compiled 26 Sep 2026, 09:10</span>
+      
+    </span>
+  </div>
+</footer>
+
+<script src="/static/system.js"></script>
+
+
+<script src="/static/servers.js"></script>
+
+
+<script>window.JOSHCORE_CLIENT_ID = "1495488424747208746";</script>
+<script src="/static/signin.js"></script>
+
+
+</body>
+</html>

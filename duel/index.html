@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supply Drop — BLACKBOX</title>
+
+<meta property="og:site_name" content="BLACKBOX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Supply Drop — 1v1">
+<meta property="og:description" content="Four crates in a row. One breach each. Browser to browser, no account needed.">
+
+<meta name="theme-color" content="#0a0b0d">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/static/dossier.css">
+</head>
+
+<body data-subjects=""
+      data-events=""
+      data-root=""
+      data-server="">
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="/" class="wordmark" aria-label="Blackbox — Moderation &amp; Community Intelligence">
+      <span class="mark">BLACK<span>BOX</span></span>
+      <span class="sub">Moderation System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU</button>
+
+    <nav id="nav">
+      <a href="/people" >Everyone</a>
+      <a href="/board" >Standings</a>
+      <a href="/titles" >Titles</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/archive" >Archive</a>
+      <a href="/duel" class="on">Duel</a>
+      <a href="/arena" >Arena</a>
+    </nav>
+
+    <div class="console">
+      
+      
+      <span class="console-live" title="Blackbox is online and recording"><i></i>ONLINE</span>
+    </div>
+
+    
+    <div class="servers" id="servers"></div>
+
+    <div class="session" id="session">
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  
+
+<section>
+  <div class="centre">
+    <div>
+      <p class="eyebrow">Operation // Supply Drop</p>
+      <h1>Four in a row. One breach each.</h1>
+      <p class="lede">
+        Drop crates into a column and line up four. Once per game you can
+        <strong>breach</strong> a column you hold the bottom of, collapsing the
+        whole stack down one — which is either a rescue or a disaster depending
+        on what falls into place.
+      </p>
+    </div>
+    <div class="status-block">
+      <div class="head"><i></i>Lobby Ready</div>
+      <div>MODE <b>1V1</b></div>
+      <div>LINK <b>PEER TO PEER</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="lobby">
+  <div class="grid two">
+
+    <div class="card live">
+      <h2>Start a game</h2>
+      <label class="field">
+        <span>Your name</span>
+        <input id="nameInput" type="text" maxlength="24" placeholder="Raider" autocomplete="off">
+      </label>
+      <button id="hostBtn" class="btn primary">Open a room</button>
+      <p class="tiny faint" style="margin-top:12px">
+        You'll get a five-character code. Post it in Discord and whoever grabs it first is in.
+      </p>
+    </div>
+
+    <div class="card live">
+      <h2>Join a game</h2>
+      <label class="field">
+        <span>Room code</span>
+        <input id="joinInput" type="text" maxlength="5" placeholder="ABCDE"
+               autocomplete="off" spellcheck="false" style="text-transform:uppercase">
+      </label>
+      <button id="joinBtn" class="btn">Join</button>
+      <p class="tiny faint" style="margin-top:12px">
+        Connects your browser straight to theirs. Nothing passes through a server.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="table" hidden>
+
+  <div class="card" style="padding:16px">
+    <div class="hud">
+      <div class="players">
+        <span class="player"><span id="youChip" class="chip p1"></span>
+          <span id="you">You</span> <span id="youBreach" class="breaches">◈</span></span>
+        <span class="versus">vs</span>
+        <span class="player"><span id="themChip" class="chip p2"></span>
+          <span id="them">Opponent</span> <span id="themBreach" class="breaches">◈</span></span>
+      </div>
+      <div class="room">
+        ROOM <strong id="roomCode">—</strong>
+        <button id="copyBtn" class="btn tiny-btn">Copy</button>
+      </div>
+    </div>
+
+    <p id="status" class="status">Waiting…</p>
+
+    <div id="grid" class="drop-grid" role="grid" aria-label="Supply drop board"></div>
+
+    <div class="controls">
+      <button id="breachBtn" class="btn" disabled>Breach</button>
+      <button id="rematchBtn" class="btn primary" hidden>Play again</button>
+    </div>
+  </div>
+
+  <p class="tiny faint" style="margin-top:14px">
+    ◈ = breach remaining. A breach that completes four for both of you is awarded
+    to your opponent — pulling the crate makes it your fault.
+  </p>
+
+</section>
+
+
+</main>
+
+<footer>
+  <div class="wrap between">
+    <span>Compiled by Blackbox. Nothing here was volunteered.</span>
+    <span class="foot-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      
+        <span class="faint">Last compiled 26 Sep 2026, 09:10</span>
+      
+    </span>
+  </div>
+</footer>
+
+<script src="/static/system.js"></script>
+
+
+<script src="/static/servers.js"></script>
+
+
+<script>window.JOSHCORE_CLIENT_ID = "1495488424747208746";</script>
+<script src="/static/signin.js"></script>
+
+
+<script src="/static/vendor/peerjs.min.js"></script>
+<script src="/static/duel.js"></script>
+<script src="/static/games.js"></script>
+
+</body>
+</html>

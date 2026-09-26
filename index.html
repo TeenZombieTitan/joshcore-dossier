@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLACKBOX — Moderation &amp; Community Intelligence</title>
+
+<meta property="og:site_name" content="BLACKBOX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BLACKBOX">
+<meta property="og:description" content="Moderation &amp; Community Intelligence. A Discord bot that keeps the record.">
+
+<meta name="theme-color" content="#0a0b0d">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/static/dossier.css">
+</head>
+
+<body data-subjects=""
+      data-events=""
+      data-root=""
+      data-server="">
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="/" class="wordmark" aria-label="Blackbox — Moderation &amp; Community Intelligence">
+      <span class="mark">BLACK<span>BOX</span></span>
+      <span class="sub">Moderation System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU</button>
+
+    <nav id="nav">
+      <a href="/people" >Everyone</a>
+      <a href="/board" >Standings</a>
+      <a href="/titles" >Titles</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/archive" >Archive</a>
+      <a href="/duel" >Duel</a>
+      <a href="/arena" >Arena</a>
+    </nav>
+
+    <div class="console">
+      
+      
+      <span class="console-live" title="Blackbox is online and recording"><i></i>ONLINE</span>
+    </div>
+
+    
+    <div class="servers" id="servers"></div>
+
+    <div class="session" id="session">
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  
+
+<section>
+  <div class="centre">
+    <div>
+      <p class="eyebrow">Blackbox // Moderation System</p>
+      <h1>Blackbox keeps the record.</h1>
+      <p class="tagline">Moderation &amp; Community Intelligence</p>
+      <p class="lede">
+        It's a bot that sits in a Discord server and quietly writes down what
+        happens — who turned up, who said what, who won. Every server it runs
+        in gets its own private dossier, readable only by a link that server
+        holds. None of them can see any of the others.
+      </p>
+    </div>
+
+    <div class="status-block">
+      <div class="head"><i></i>Blackbox // Observation Active</div>
+      <div>SERVERS CONNECTED <b>1</b></div>
+      <div>SYSTEM STATUS <b>NORMAL</b></div>
+      <div>LOCAL <b data-clock>--:--:--</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">Across every server</p>
+  <div class="grid four">
+    <div class="card figure">
+      <span class="n">1</span>
+      <span class="k">Servers connected</span>
+    </div>
+    <div class="card figure">
+      <span class="n">28</span>
+      <span class="k">Subjects on file</span>
+    </div>
+    <div class="card figure">
+      <span class="n">315</span>
+      <span class="k">Messages logged</span>
+    </div>
+    <div class="card figure">
+      <span class="n">104</span>
+      <span class="k">Events recorded</span>
+    </div>
+  </div>
+  <p class="tiny faint mono" style="margin-top:14px">
+    COUNTS ONLY — NO SERVER OR MEMBER IS NAMED ON THIS PAGE
+  </p>
+</section>
+
+<section>
+  <div class="grid three pitch">
+    <div class="card live">
+      <p class="eyebrow" style="margin-bottom:8px">The bot</p>
+      <h2>It runs the server</h2>
+      <p class="small dim" style="margin:0">
+        Ranks, weekly crowns, supply drops, rumours the server votes on, and
+        titles awarded silently the moment you trip the condition. It talks in
+        voice chat, mostly to insult people.
+      </p>
+    </div>
+
+    <div class="card live">
+      <p class="eyebrow" style="margin-bottom:8px">The record</p>
+      <h2>One server, one file</h2>
+      <p class="small dim" style="margin:0">
+        Scores, titles and history are kept per server and never pooled. Being
+        somebody in one community counts for nothing in the next, and
+        <a href="/privacy">you can take your page down</a> whenever you want.
+      </p>
+    </div>
+
+    <div class="card live">
+      <p class="eyebrow" style="margin-bottom:8px">The games</p>
+      <h2>Settle it here</h2>
+      <p class="small dim" style="margin:0">
+        <a href="/duel">Supply Drop</a> and <a href="/arena">Breach Point</a> —
+        1v1, in the browser, no account. Open a room, post the code in Discord,
+        whoever grabs it first is in.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">Reading a server's file</p>
+  <div class="card raised">
+    <p class="small dim" style="margin:0 0 10px">
+      Each server's dossier sits at its own address, handed out inside that
+      server with <code>~site</code>. There is no way to browse from one to
+      another, and no list of them anywhere — if you have not been given a
+      link, there is nothing here to find.
+    </p>
+    <p class="small dim" style="margin:0">
+      Staff can reissue their server's link with <code>~dossier rotate</code>,
+      which takes the old address out of service at the next rebuild.
+    </p>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="wrap between">
+    <span>Compiled by Blackbox. Nothing here was volunteered.</span>
+    <span class="foot-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      
+        <span class="faint">Last compiled 26 Sep 2026, 09:10</span>
+      
+    </span>
+  </div>
+</footer>
+
+<script src="/static/system.js"></script>
+
+
+<script src="/static/servers.js"></script>
+
+
+<script>window.JOSHCORE_CLIENT_ID = "1495488424747208746";</script>
+<script src="/static/signin.js"></script>
+
+
+</body>
+</html>

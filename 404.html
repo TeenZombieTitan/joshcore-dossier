@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — BLACKBOX</title>
+
+<meta property="og:site_name" content="BLACKBOX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BLACKBOX">
+<meta property="og:description" content="Everything Blackbox has recorded.">
+
+<meta name="theme-color" content="#0a0b0d">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/static/dossier.css">
+</head>
+
+<body data-subjects=""
+      data-events=""
+      data-root=""
+      data-server="">
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="/" class="wordmark" aria-label="Blackbox — Moderation &amp; Community Intelligence">
+      <span class="mark">BLACK<span>BOX</span></span>
+      <span class="sub">Moderation System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU</button>
+
+    <nav id="nav">
+      <a href="/people" >Everyone</a>
+      <a href="/board" >Standings</a>
+      <a href="/titles" >Titles</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/archive" >Archive</a>
+      <a href="/duel" >Duel</a>
+      <a href="/arena" >Arena</a>
+    </nav>
+
+    <div class="console">
+      
+      
+      <span class="console-live" title="Blackbox is online and recording"><i></i>ONLINE</span>
+    </div>
+
+    
+    <div class="servers" id="servers"></div>
+
+    <div class="session" id="session">
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  
+<section style="padding-top:40px">
+  <p class="eyebrow">Error 404</p>
+  <h1>No such file.</h1>
+  <p class="lede">No file on that name.</p>
+  <p style="margin-top:28px"><a href="/" class="btn" id="backToIndex">Back to the index</a></p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap between">
+    <span>Compiled by Blackbox. Nothing here was volunteered.</span>
+    <span class="foot-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      
+        <span class="faint">Last compiled 26 Sep 2026, 09:10</span>
+      
+    </span>
+  </div>
+</footer>
+
+<script src="/static/system.js"></script>
+
+
+<script src="/static/servers.js"></script>
+
+
+<script>window.JOSHCORE_CLIENT_ID = "1495488424747208746";</script>
+<script src="/static/signin.js"></script>
+
+
+
+<script>
+  (() => {
+    /* A mistyped URL *inside* a server's dossier would otherwise offer to send
+       you back to the public page rather than to the dossier you were reading. */
+    const bundle = location.pathname.match(/^\/s\/[0-9a-f]{8,}\//);
+    if (bundle) {
+      const back = document.getElementById("backToIndex");
+      if (back) back.setAttribute("href", bundle[0]);
+      return;
+    }
+
+    /* Everything about a person moved inside its own server's dossier when
+       Blackbox went multi-server, so old bookmarks and old links posted in
+       Discord all land here. Say where they went — naming no server, because
+       this page is public. */
+    if (!/^\/(u|board|people|titles|archive|gallery)(\/|$)/.test(location.pathname)) return;
+
+    const note = document.createElement("div");
+    note.className = "card";
+    note.style.cssText = "margin:24px 0 0";
+    note.innerHTML =
+      '<strong>This page moved.</strong>' +
+      '<p class="small dim" style="margin:8px 0 0">Every server now has its own ' +
+      'private dossier, and profiles, standings and archives live inside it. ' +
+      'Ask Blackbox for your server\'s link with <code>~site</code> in Discord ' +
+      '— old addresses like this one no longer point anywhere.</p>';
+    document.querySelector("section")?.append(note);
+  })();
+</script>
+
+</body>
+</html>
